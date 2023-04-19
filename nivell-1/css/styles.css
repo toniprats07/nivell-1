@@ -1,0 +1,134 @@
+body {
+    max-width:1200px;
+}
+
+/* HEDER */
+.header {
+    background-color: gray;
+    height: auto; 
+    border: 10px solid black;
+}
+/* Header nav */
+.header-nav{
+    display: block;
+    height: auto;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 10px solid black; 
+}
+/* Mobil */
+@media (min-width: 480px) {
+    .header-nav {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        border-bottom: 5px solid black;
+    }
+}
+.header-uno, .header-tres {
+    background-color: red;
+    height: 20px;
+    flex: 0.5;
+    margin-bottom: 5px;
+}
+.header-dos {
+    background-color: red;
+    height: 20px;
+    flex: 2;
+    margin-bottom: 5px;
+}
+
+/*Header banner */
+.header-section {
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 10px;
+}
+.header-section_content {
+    background-color: yellow;
+    height: 20px;
+    flex: auto;
+}
+
+/* PRINCIPAL SECTION */
+.principal-section {
+    margin-top: 10px;
+}
+/* Tablet */
+@media (min-width: 780px) {
+    .principal-section {
+        margin-top: 10px;
+        height: auto;
+        display: grid;
+        grid-template-columns: 0.8fr 0.2fr;
+    }
+}
+/* Principal article */
+.principal-seccion_column{
+    background-color: grey;
+    padding: 10px 0;
+    border: 10px solid yellow;
+    border-bottom: 5px solid yellow;
+}
+/* Tablet */
+@media (min-width: 780px) {
+    .principal-seccion_column {
+        border: 10px solid black;
+        border-right: 5px solid black;
+    }
+}
+@media (min-width: 480px) {
+.principal-section_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+}
+.principal-section_content_flex {
+    flex-basis: 100%;
+    flex: 1;
+}
+.principal-section_1,
+.principal-section_2,
+.principal-section_3,
+.principal-section_4 {
+    background-color: blue;
+    height: 20px;
+    margin: 10px;
+}
+.principal-section_5 {
+    background-color: aqua;
+    height: 20px;
+    margin: 0 10px 10px 10px;
+}
+
+/* Right seccion */
+aside {
+    background-color: red;
+    border: 10px solid yellow;
+    border-top: 5px solid yellow;
+    padding: 10px 0;
+}
+@media (min-width: 780px) {
+    aside {
+        border: 10px solid black;
+        border-left: 5px solid black;
+    }
+}
+.aside-1,
+.aside-2 {
+    background-color: yellow;
+    height: 20px;
+    margin: 10px;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 10px;
+    height: 20px;
+    background-color: yellow;
+    border: 10px solid black;
+}
